@@ -8,7 +8,8 @@
  *
  */
 
-class Kohana_OAuth2_Client_Github extends OAuth2_Client {
+class Kohana_OAuth2_Client_Github extends OAuth2_Client
+{
 
     /**
      * Return the authorization endpoint
@@ -66,11 +67,11 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client {
         return $response['result'];
     }
 
-    public function fetch($protected_resource_url, $parameters = array(), $http_method = self::HTTP_METHOD_GET, array $http_headers = array(), $form_content_type = self::HTTP_FORM_CONTENT_TYPE_MULTIPART, $check_http_status = TRUE, $expected_http_status = 200) {
+    public function fetch($protected_resource_url, $parameters = array(), $http_method = self::HTTP_METHOD_GET, array $http_headers = array(), $form_content_type = self::HTTP_FORM_CONTENT_TYPE_MULTIPART, $check_http_status = true, $expected_http_status = 200)
+    {
         $http_headers['User-Agent'] = 'nanrenwa.com web app.';
         return parent::fetch($protected_resource_url, $parameters, $http_method, $http_headers, $form_content_type, $check_http_status, $expected_http_status);
     }
-
 }
 
 // END Kohana_OAuth2_Client_Github

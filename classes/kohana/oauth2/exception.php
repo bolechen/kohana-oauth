@@ -8,7 +8,8 @@
  *
  */
 
-class Kohana_OAuth2_Exception extends Kohana_Exception {
+class Kohana_OAuth2_Exception extends Kohana_Exception
+{
 
     /**
      * Error codes

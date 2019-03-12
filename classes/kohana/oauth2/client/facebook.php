@@ -8,7 +8,8 @@
  *
  */
 
-class Kohana_OAuth2_Client_Facebook extends OAuth2_Client {
+class Kohana_OAuth2_Client_Facebook extends OAuth2_Client
+{
 
     /**
      * Return the authorization endpoint

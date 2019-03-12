@@ -8,8 +8,8 @@
  *
  */
 
-class OAuth2_Client_Github extends Kohana_OAuth2_Client_Github {
-
+class OAuth2_Client_Github extends Kohana_OAuth2_Client_Github
+{
 }
 
 // END OAuth2_Client_Github

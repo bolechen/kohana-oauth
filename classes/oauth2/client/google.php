@@ -8,8 +8,8 @@
  *
  */
 
-class OAuth2_Client_Google extends Kohana_OAuth2_Client_Google {
-
+class OAuth2_Client_Google extends Kohana_OAuth2_Client_Google
+{
 }
 
 // END OAuth2_Client_Google

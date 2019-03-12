@@ -1,23 +1,18 @@
 {
-	"name":        "nanrenwa/kohana-oauth",
-	"type":        "kohana-module",
-	"description": "OAuth2 client for Kohana 3.0.x",
-	"homepage":    "https://github.com/nanrenwa/kohana-oauth",
-	"license":     "MIT",
-	"keywords":    ["kohana", "oauth", "oauth2"],
-	"authors": [
-		{
-			"name":     "Bole Chen",
-			"email":    "bole.chen@gmail.com",
-			"homepage": "https://nanrenwa.com",
-			"role":     "developer"
-		}
-	],
-	"support": {
-		"issues":   "https://github.com/nanrenwa/oauth/issues"
-	},
-	"require": {
-		"composer/installers": 	"~1.0",
-		"php":                 	">=5.3.3"
-	}
+    "name":        "nanrenwa/kohana-oauth",
+    "type":        "kohana-module",
+    "description": "OAuth2 client for Kohana 3.0.x",
+    "license":     "MIT",
+    "keywords":    ["kohana", "oauth", "oauth2"],
+    "authors": [{
+        "name": "Bole Chen",
+        "email": "avenger@php.net"
+    }],
+    "support": {
+        "issues":   "https://github.com/nanrenwa/kohana-oauth/issues"
+    },
+    "require": {
+        "composer/installers": "~1.0",
+        "php": ">=5.3.3"
+    }
 }

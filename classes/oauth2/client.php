@@ -8,8 +8,8 @@
  *
  */
 
-abstract class OAuth2_Client extends Kohana_OAuth2_Client {
-
+abstract class OAuth2_Client extends Kohana_OAuth2_Client
+{
 }
 
 // END OAuth2_Client
