@@ -8,8 +8,8 @@
  *
  */
 
-class OAuth2_Client_Facebook extends Kohana_OAuth2_Client_Facebook {
-
+class OAuth2_Client_Facebook extends Kohana_OAuth2_Client_Facebook
+{
 }
 
 // END OAuth2_Client_Facebook

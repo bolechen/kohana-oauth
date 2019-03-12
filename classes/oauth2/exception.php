@@ -8,8 +8,8 @@
  *
  */
 
-class OAuth2_Exception extends Kohana_OAuth2_Exception {
-
+class OAuth2_Exception extends Kohana_OAuth2_Exception
+{
 }
 
 // END OAuth2_Exception
