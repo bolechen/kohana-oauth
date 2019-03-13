@@ -1,4 +1,6 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
+
+defined('SYSPATH') or die('No direct script access.');
 /*
  * @package		OAuth2 Module
  * @author      Pap Tamas
@@ -8,13 +10,12 @@
  *
  */
 
-class Kohana_OAuth2_Client_Google extends OAuth2_Client
+class kohana_oauth2_client_google extends OAuth2_Client
 {
-
     /**
-     * Return the authorization endpoint
+     * Return the authorization endpoint.
      *
-     * @return  string
+     * @return string
      */
     public function get_authorization_endpoint()
     {
@@ -22,9 +23,9 @@ class Kohana_OAuth2_Client_Google extends OAuth2_Client
     }
 
     /**
-     * Return the access token endpoint
+     * Return the access token endpoint.
      *
-     * @return  string
+     * @return string
      */
     public function get_access_token_endpoint()
     {
@@ -32,9 +33,9 @@ class Kohana_OAuth2_Client_Google extends OAuth2_Client
     }
 
     /**
-     * Return the user profile service url
+     * Return the user profile service url.
      *
-     * @return  string
+     * @return string
      */
     public function get_user_profile_service_url()
     {
@@ -42,10 +43,11 @@ class Kohana_OAuth2_Client_Google extends OAuth2_Client
     }
 
     /**
-     * Get user data
+     * Get user data.
      *
-     * @return  array
-     * @throws  OAuth2_Exception
+     * @throws OAuth2_Exception
+     *
+     * @return array
      */
     public function get_user_data()
     {
