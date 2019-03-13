@@ -1,4 +1,6 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
+
+defined('SYSPATH') or die('No direct script access.');
 /*
  * @package		OAuth2 Module
  * @author      Pap Tamas
@@ -8,13 +10,12 @@
  *
  */
 
-class Kohana_OAuth2_Client_Github extends OAuth2_Client
+class kohana_oauth2_client_github extends OAuth2_Client
 {
-
     /**
-     * Return the authorization endpoint
+     * Return the authorization endpoint.
      *
-     * @return  string
+     * @return string
      */
     public function get_authorization_endpoint()
     {
@@ -22,9 +23,9 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client
     }
 
     /**
-     * Return the access token endpoint
+     * Return the access token endpoint.
      *
-     * @return  string
+     * @return string
      */
     public function get_access_token_endpoint()
     {
@@ -32,9 +33,9 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client
     }
 
     /**
-     * Return the user profile service url
+     * Return the user profile service url.
      *
-     * @return  string
+     * @return string
      */
     public function get_user_profile_service_url()
     {
@@ -42,9 +43,9 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client
     }
 
     /**
-     * Get user data
+     * Get user data.
      *
-     * @return  array
+     * @return array
      */
     public function get_user_data()
     {
@@ -55,9 +56,9 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client
     }
 
     /**
-     * Get user emails
+     * Get user emails.
      *
-     * @return  array
+     * @return array
      */
     public function get_user_emails()
     {
@@ -67,9 +68,10 @@ class Kohana_OAuth2_Client_Github extends OAuth2_Client
         return $response['result'];
     }
 
-    public function fetch($protected_resource_url, $parameters = array(), $http_method = self::HTTP_METHOD_GET, array $http_headers = array(), $form_content_type = self::HTTP_FORM_CONTENT_TYPE_MULTIPART, $check_http_status = true, $expected_http_status = 200)
+    public function fetch($protected_resource_url, $parameters = [], $http_method = self::HTTP_METHOD_GET, array $http_headers = [], $form_content_type = self::HTTP_FORM_CONTENT_TYPE_MULTIPART, $check_http_status = true, $expected_http_status = 200)
     {
         $http_headers['User-Agent'] = 'nanrenwa.com web app.';
+
         return parent::fetch($protected_resource_url, $parameters, $http_method, $http_headers, $form_content_type, $check_http_status, $expected_http_status);
     }
 }
