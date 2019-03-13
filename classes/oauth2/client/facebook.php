@@ -1,4 +1,6 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
+
+defined('SYSPATH') or die('No direct script access.');
 /*
  * @package		OAuth2 Module
  * @author      Pap Tamas
@@ -8,7 +10,7 @@
  *
  */
 
-class OAuth2_Client_Facebook extends Kohana_OAuth2_Client_Facebook
+class oauth2_client_facebook extends Kohana_OAuth2_Client_Facebook
 {
 }
 
